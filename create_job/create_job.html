@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="font-size:20px">Enter Job Data</title>
+    <link rel="stylesheet" href="create_job.css">
+    <script src="create_job.js"></script>
+</head>
+
+<body>
+    <div id="Main">
+
+        <div id="logo">
+            
+            <img src="https://static.naukimg.com/s/7/104/assets/images/white-boy.a0d2814a.png" id="image" alt="Image">
+        
+        </div>
+        <div id="job-page">
+            <h1>Enter Job Data</h1>
+            <br>
+            <form action="/action.java" id="details">
+
+                <div >
+                    <label for="title">Title
+                        <input type="text" id="title" placeholder="Enter the Job Title" required>
+                    </label>
+                </div>
+                
+                <div>
+                    <label for="department">Department
+                        <select name="department" id="department" required>
+                            <option value="Engineering/Development">Engineering/Development</option>
+                            <option value="ProductManagement">Product Management</option>
+                            <option value="Design">Design</option>
+                        </select>
+                    </label>
+                </div>
+                
+                <div>
+                    <label for="type">Type
+                        <select name="type" id="type" required>
+                            <option value="SoftwareEngineer">SoftwareEngineer</option>
+                            <option value="FrontendDeveloper">Frontend Developer</option>
+                            <option value="BackendDeveloper">Backend Developer</option>
+                            <option value="DevOpsEngineer">DevOps Engineer</option>
+                            <option value="ProductManager">Product Manager</option>
+                            <option value="ProductOwner">Product Owner</option>
+                            <option value="UX/UIDesigner">UX/UI Designer</option>
+                            <option value="GraphicDesigner">Graphic Designer</option>
+                        </select>
+                    </label>
+                </div>
+                
+                <div>
+                    <label for="country">Country
+                        <select name="country" id="country"required>
+                            <option value="india"  >India</option>
+                            <option value="usa"    >USA</option>
+                            <option value="uk"     >UK</option>
+                            <option value="germany">Germany</option>
+                            <option value="Norway" >Norway</option>
+                        </select>
+                    </label>
+                </div>
+                
+                <div>
+                    <label for="description">Description
+                        <textarea name="description" id="description" placeholder="Tell about the role" rows="5" cols="50" required></textarea>
+                    </label>
+                </div>
+                
+                <div>
+                    <label for="dateInput">Enter a date (DD/MM/YYYY):</label>
+                    <input type="text" id="dateInput" required>
+                    <button type="button" id="date-submit">Validate Date</button>
+                    <p id="result"></p>
+                </div>
+                <br>
+                <input type="submit" id="submit" >
+            </form>
+            <br>
+        </div>
+    </div>
+
+
+</body>
+</html>

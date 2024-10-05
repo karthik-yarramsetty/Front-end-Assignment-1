@@ -1,0 +1,63 @@
+*{
+   color:#333333;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   padding:0;
+   margin:0;
+   overflow: hidden;
+}
+#Main{
+    height:1000px;
+   background-color:rgba(211, 211, 211, 1);
+   display:flex;   
+}
+#logo{
+    margin-top:110px;
+    margin-left:50px;
+}
+#job-page{
+    width: 750px;
+    height:500px;
+    padding:10px;
+    border-radius:40px;
+    box-shadow:1px 2px 6px rgba(255, 255, 255,1);
+    background-color: rgba(255, 255, 255,0.8);
+    margin-left:150px;
+    margin-top:40px;
+}
+#job-page div{
+margin-top:10px;
+}
+#details{
+    border-radius:70px;
+}
+h1{
+    padding-left:50px;
+}
+div>label{
+    padding-left:50px;
+    font-size:20px;
+}
+input,option,select{
+    border-radius:5px;
+    font-size:20px;
+}
+#description,#submit{
+    position:relative;
+    left:50px;
+    font-size:20px;
+}
+p{
+    padding-left:50px;
+    font-size:20px;
+}
+input[type="submit"]{
+    cursor:pointer;
+    background-color: rgba(23, 233, 215,0.3);
+}
+input[type=text],textarea{
+    color:#666666;
+}
+input[type="submit"]:hover{
+    cursor:pointer;
+    background-color: rgba(23, 233, 215,1);
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="apply_jobs.css">
+    <script src="apply_jobs.js"></script>
+    <title>Apply for Jobs</title>
+</head>
+<body>
+    <div id="main">
+        <div id="image">
+            <img src="https://static.naukimg.com/s/7/104/assets/images/white-boy.a0d2814a.png" alt="Image">
+        </div>
+        <div id="content">
+            <span id="main-content">
+            <form action="/action.java" method="POST" enctype="multipart/form-data">
+                <h1>Apply for Jobs</h1>
+                <p>First Name
+                    <input type="text" name="first-name" id="first-name" placeholder="Jonney" required>
+                </p>
+                <p>Last Name
+                    <input type="text" name="last-name" id="last-name" placeholder="depp" required>
+                </p>
+                <p>Email
+                    <input type="email" name="email" id="email"  required>
+                </p>
+                <p>Phone Number
+                    <input type="tel" name="phone-number" id="phone-number" pattern="^\d{10}$" required>
+                </p>
+                <p>Address
+                    <input type="text" name="address" id="address" required>
+                </p>
+                <p>City
+                    <input type="text" name="city" id="city"  required>
+                </p>
+                <p>State
+                    <input type="text" name="state" id="state" required>
+                </p>
+                <p>Zip Code
+                    <input type="text" name="zip-code" id="zip-code" pattern="[0-9]{6}" required>
+                </p>
+                <p>Country
+                    <select name="country" id="country" required>
+                        <option value="" disabled selected>------Select--------</option>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="germany">Germany</option>
+                    </select>
+                </p>
+                <p>Education Level
+                    <select name="education-value" id="education-value" required>
+                        <option value="" disabled selected>------Select--------</option>
+                        <option value="post-graduate">Post Graduate</option>
+                        <option value="under-graduate">Under Graduate</option>
+                        <option value="diploma">Diploma</option>
+                        <option value="intermediate">Intermediate</option>
+                    </select>
+                </p>
+                <p>Education Type
+                    <select name="education-type" id="education-type" required>
+                        <option value="" disabled selected>------Select--------</option>
+                        <option value="formal-education">Formal Education</option>
+                        <option value="informal-education">Informal Education</option>
+                        <option value="online-education">Online Education</option>
+                    </select>
+                </p>
+                <p>Upload Resume
+                    <input type="file" name="resume" id="resume" required>
+                </p>
+                <p>Cover Letter<br>
+                    <textarea name="cover-letter" id="cover-letter" cols="40" rows="5" required></textarea>
+                </p>
+                <div id="check">
+                    <label for="employment-status">Are you employed?
+                        <input type="checkbox" name="employment-status" id="employment-status" onclick="toggleCheckboxContent()">
+                    </label>
+                </div>
+                <div id="checkbox-content">
+                    <p>
+                        <label for="current-employer">Current Employer
+                            <input type="text" name="current-employer" id="current-employer">
+                        </label>
+                    </p>
+                    <p>
+                        <label for="experience">Years Of Experience
+                            <input type="number" name="experience" id="experience" min="0" max="5" pattern="^\d{10}$">
+                        </label>
+                    </p>
+                </div>
+                <p>Jobs You Want To Apply
+                    <br>
+                    <select name="select-jobs" id="select-jobs" multiple required>
+                        <option value="frontend-developer">Frontend Developer</option>
+                        <option value="backend-developer">Backend Developer</option>
+                        <option value="data-analyst">Data Analyst</option>
+                        <option value="data-scientist">Data Scientist</option>
+                    </select>
+                </p>
+                <br>
+                <input type="submit">
+            </form>
+        </div>
+    </span>
+    </div>
+
+</body>
+</html>
